@@ -52,9 +52,9 @@ function App() {
           Signup
         </button>
         <button className=" py-2 px-4 flex items-center  rounded-full shadow-lg ">
-          <a className="px-2 py-2 text-blue" href="">
+          <button className="px-2 py-2 text-blue" href="">
             Request Demo
-          </a>
+          </button>
           <img alt="tag" src="/path.svg" className="w-5" />
         </button>
       </div>
@@ -73,22 +73,21 @@ function App() {
             </div>
           </div>
           <div className="text-white font-nowre hidden  md:flex ml-48 items-center  ">
-            <a className="mx-10 my-2 hover:text-blue" href="">
+            <button onClick={gotoAbout} className="mx-10 my-2 hover:text-blue">
               About
-            </a>
-            <a className="mx-10 my-2 hover:text-blue" href="">
-              Help
-            </a>
-            <a className="mx-10 my-2 hover:text-blue" href="">
+            </button>
+            <button className="mx-10 my-2 hover:text-blue">Help</button>
+            <button
+              onClick={gotofeatures}
+              className="mx-10 my-2 hover:text-blue"
+            >
               Features
-            </a>
-            <a className="mx-10 my-2 hover:text-blue" href="">
+            </button>
+            <button onClick={gotoSign} className="mx-10 my-2 hover:text-blue">
               Signup
-            </a>
+            </button>
             <button className=" py-2 px-4 flex items-center  rounded-full shadow-lg ">
-              <a className="px-2 py-2 text-blue" href="">
-                Request Demo
-              </a>
+              <button className="px-2 py-2 text-blue">Request Demo</button>
               <img alt="tag" src="/path.svg" className="w-5" />
             </button>
           </div>
@@ -379,12 +378,12 @@ function App() {
             </button>
             <button className=" md:py-2 md:px-4 mx-4  items-center  rounded-full shadow-lg ">
               <div className="flex">
-                <a
+                <button
                   className="md:px-2 md:py-2 md:text-xl font-nowre text-purple"
                   href=""
                 >
                   Request Demo
-                </a>
+                </button>
                 <img alt="tag" src="/path.svg" className="md:w-8 w-4" />
               </div>
             </button>
